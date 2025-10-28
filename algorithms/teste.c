@@ -10,7 +10,8 @@ int main()
    printf("Enter a name:\n");
    fgets(name, sizeof(name), stdin);
 
-   printf("You entered: \n");
+   printf("\n");
+   printf("Welcome: ");
    printf("%s", name);
 
 
