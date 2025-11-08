@@ -22,7 +22,9 @@ int main()
     C[0] = A[1]*B[2] - A[2]*B[1];
     C[1] = A[2]*B[0] - A[0]*B[2];
     C[2] = A[0]*B[1] - A[1]*B[0];
+    printf("\n");
     printf("The vectorial product of the vectors is: (%d, %d, %d)\n", C[0], C[1], C[2]);
+    printf("\n");
     free(A);    
     free(B);
     free(C);

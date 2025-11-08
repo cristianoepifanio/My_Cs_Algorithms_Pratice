@@ -10,7 +10,9 @@ int main()
     printf("Enter coordinates of second vector (x2 y2 z2): ");
     scanf("%d %d %d", &x2, &y2, &z2);
     int scalar_product = x1 * x2 + y1 * y2 + z1 * z2;
+    printf("\n");
     printf("Scalar product: %d\n", scalar_product);
+    printf("\n");
    
     return 0;
 }
