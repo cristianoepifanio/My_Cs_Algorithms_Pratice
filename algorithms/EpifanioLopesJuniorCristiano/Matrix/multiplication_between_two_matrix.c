@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 int main() {
-    int rowsA,colsA;
-    int rowsB,colsB;
+    int rowsA=10,colsA=10;
+    int rowsB=10,colsB=10;
     
     
     // Read the dimensions of the matrix A
