@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <math.h>
 int main(){
-    /*Check if2 tridimensional vectors are orthogonal */
+    /*Check if 2 tridimensional vectors are orthogonal */
     int i;
     int *A, *B;
     bool orthogonal = true;

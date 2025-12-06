@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>        
 
 void escalar_product_v3(void) {
     int x1, x2, y1, y2, z1, z2;
@@ -78,10 +80,55 @@ void escalar_product_n(void) {
     free(C);
     };
 
+    void orthogonal_vectors_v3(void) {
+        /*Check if 2 tridimensional vectors are orthogonal */
+    int i;
+    int *A, *B;
+    // bool orthogonal = true;
+    A = (int*) malloc(3 * sizeof(int));
+    B = (int*) malloc(3 * sizeof(int));
+    printf("Enter the 3 elements of vector A:\n");  
+    for(i = 0; i < 3; i++) {
+        printf("type %dth cordinate: ", i+1);
+        scanf("%d", &A[i]);
+    }
+    printf("Enter the 3 elements of vector B:\n");
+    for(i = 0; i < 3; i++) {
+        printf("type %dth cordinate: ", i+1);
+        scanf("%d", &B[i]);
+    }
+    int scalar_product = 0;
+    for(i = 0; i < 3; i++) {
+        scalar_product += A[i] * B[i];
+    }
+    printf("\n");
+    if(scalar_product == 0) {
+        printf("The vectors are orthogonal.\n");
+    } else {
+        printf("The vectors are not orthogonal.\n");
+    }
+    printf("\n");
+    free(A);
+    free(B);
+
+    };
+
 int main()
 {
     int opt;
-    printf("Select an option:\n1. Option One\n2. Option Two\n3. Option Three\n0. Exit\n");
+    printf("\n");
+    printf("Select an option:\n1. Escalar producto for a tridimensional vector\n");
+    printf("Select an option:\n2. Escalar producto for a n-dimensional vector\n");
+    printf("Select an option:\n3. Subtraction between 2 vectors n-dimensional\n");
+    printf("Select an option:\n4. Check if 2 tridimensional vectors are orthogonal\n");
+    printf("Select an option:\n5. \n");
+    printf("Select an option:\n6. \n");
+    printf("Select an option:\n7. \n");
+    printf("Select an option:\n8. \n");
+    printf("Select an option:\n9. \n");
+    printf("Select an option:\n10. \n");
+    printf("0. Exit\n");
+    printf("\n");
     scanf("%d", &opt);
     do
     {
@@ -91,15 +138,14 @@ int main()
             escalar_product_v3();
             break;
         case 2:
-
-        break;
             escalar_product_n();
             break;
         case 3:
             subtraction_Vn();
-           
             break;
-
+        case 4:
+            orthogonal_vectors_v3();
+            break;
         default:
             break;
         }
