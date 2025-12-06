@@ -26,6 +26,7 @@ int main()
     }
     printf("\n");
     printf("The vectorial product of the vectors is: (");   
+    
     for(i = 0; i < n; i++) {
         if(i != n-1) {
             printf("%d, ", C[i]);
