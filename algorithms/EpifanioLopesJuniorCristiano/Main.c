@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>        
+#include <stdbool.h>  
+#include<math.h>      
 
 void escalar_product_v3(void) {
     int x1, x2, y1, y2, z1, z2;
@@ -283,7 +284,7 @@ void escalar_product_n(void) {
     }
 
     // Print the result matrix
-    printf("Resultant Matrix after Addition:\n");
+    printf("Resultant Matrix after to be raised by a power:\n");
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             printf("%d ", result[i][j]);
@@ -365,6 +366,7 @@ void escalar_product_n(void) {
     void transposed_matrix(void) {
         int rows, cols;
         // Read the dimensions of the matrix
+    printf("To perform the transposition of a matrix\n");
     printf("Enter number of rows and columns for the matrix: \n");
     printf("rows: ");
     scanf("%d", &rows);
@@ -404,8 +406,8 @@ int main()
 {
     int opt;
     printf("\n");
-    printf("Select an option:\n1. Escalar producto for a tridimensional vector\n");
-    printf("2. Escalar producto for a n-dimensional vector\n");
+    printf("Select an option:\n1. Escalar product for a tridimensional vector\n");
+    printf("2. Escalar product for a n-dimensional vector\n");
     printf("3. Subtraction between 2 vectors n-dimensional\n");
     printf("4. Check if 2 tridimensional vectors are orthogonal\n");
     printf("5. Vectorial product between 2 n-dimensional vectos \n");

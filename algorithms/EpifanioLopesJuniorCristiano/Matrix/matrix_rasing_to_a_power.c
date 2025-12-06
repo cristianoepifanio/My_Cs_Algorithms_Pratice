@@ -37,7 +37,7 @@ int main() {
     }
 
     // Print the result matrix
-    printf("Resultant Matrix after Addition:\n");
+    printf("Resultant Matrix after to be raised by a power:\n");
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             printf("%d ", result[i][j]);
