@@ -6,6 +6,7 @@ int main() {
     
     
     // Read the dimensions of the matrix A
+    printf("\nTo perform the multiplication between 2 matrices\n");
     printf("Enter number of rows and columns for matrix A: \n");
     printf("rows: ");
     scanf("%d", &rowsA);

@@ -4,6 +4,7 @@ int main() {
     int rows, cols;
 
     // Read the dimensions of the matrices
+    printf("\nTo perform the subtraction between 2 matrices\n");
      printf("Enter number of rows and columns: \n");
     printf("rows: ");
     scanf("%d", &rows);

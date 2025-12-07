@@ -7,6 +7,7 @@ int main()
     int n, i;
     int *A, *B; 
     int scalar_product = 0;
+    printf("\nTo calculate the product escalar between 2 n-dimensional vectors\n");
     printf("Enter the dimension of the vectors: ");
     scanf("%d", &n);    
     A = (int*) malloc(n * sizeof(int));

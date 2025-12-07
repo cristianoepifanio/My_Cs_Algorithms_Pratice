@@ -2,7 +2,8 @@
 
 int main() {
     int rows, cols;
-    
+
+    printf("To calculate the multiplying of lower triangle elements of a square matrix\n");    
     printf("Enter number of rows: ");
     scanf("%d", &rows);
     printf("Enter number of columns: ");
@@ -10,7 +11,7 @@ int main() {
     while (cols != rows)
     {
         printf("The matrix must to be square.\n");
-        printf("Enter columns for matrix again: \n");    
+        printf("Enter number of columns for matrix again: \n");    
         printf("columns: ");       
         scanf("%d", &cols);
 

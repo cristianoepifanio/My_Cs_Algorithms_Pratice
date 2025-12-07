@@ -9,6 +9,7 @@ int main()
     A = (int*) malloc(3 * sizeof(int));
     B = (int*) malloc(3 * sizeof(int)); 
     C = (int*) malloc(3 * sizeof(int));
+    printf("\nTo calculate the vectorial product between 2 tridimensional vectors\n");
     printf("Enter the 3 elements of vector A:\n");
     for(i = 0; i < 3; i++) {
         printf("type %dth cordinate: ", i+1);

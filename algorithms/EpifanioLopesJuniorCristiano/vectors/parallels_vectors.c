@@ -10,6 +10,7 @@ int main(){
     float ratio;
     A = (int*) malloc(3 * sizeof(int));
     B = (int*) malloc(3 * sizeof(int)); 
+    printf("\nTo check if 2 tridimensional vectors are parallel\n");
     printf("Enter the 3 elements of vector A:\n");
     for(i = 0; i < 3; i++) {
         printf("type %dth cordinate: ", i+1);
@@ -40,7 +41,7 @@ int main(){
     }
     printf("\n");
     if(parallel) {
-        printf("The vectors are parallel.\n");
+        printf("The vectors are parallel .\n");
     } else {
         printf("The vectors are not parallel.\n");
     }

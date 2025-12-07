@@ -5,7 +5,7 @@
 
 void escalar_product_v3(void) {
     int x1, x2, y1, y2, z1, z2;
-    printf("To calculate the product escalar between 2 tridimensional vectors\n");
+    printf("\nTo calculate the product escalar between 2 tridimensional vectors\n");
     printf("Enter coordinates of first vector (x1 y1 z1): ");
     scanf("%d %d %d", &x1, &y1, &z1);
     printf("Enter coordinates of second vector (x2 y2 z2): ");
@@ -22,7 +22,7 @@ void escalar_product_n(void) {
     int *A, *B; 
     int scalar_product = 0;
 
-    printf("To calculate the product escalar between 2 n-dimensional vectors\n");
+    printf("\nTo calculate the product escalar between 2 n-dimensional vectors\n");
     printf("Enter the dimension of the vectors: ");
     scanf("%d", &n);    
     A = (int*) malloc(n * sizeof(int));
@@ -51,7 +51,7 @@ void escalar_product_n(void) {
          /* Subtraction of 2 n-dimensional vectors */
     int n, i;
     int *A, *B, *C; 
-    printf("To calculate the subtraction between 2 n-dimensional vectors (A - B)\n");
+    printf("\nTo calculate the subtraction between 2 n-dimensional vectors (A - B)\n");
     printf("Enter the dimension of the vectors: ");
     scanf("%d", &n);    
     A = (int*) malloc(n * sizeof(int));
@@ -89,11 +89,11 @@ void escalar_product_n(void) {
         /*Check if 2 tridimensional vectors are orthogonal */
     int i;
     int *A, *B;
-    // bool orthogonal = true;
+    
     A = (int*) malloc(3 * sizeof(int));
     B = (int*) malloc(3 * sizeof(int));
 
-    printf("To check if 2 tridimensional vectors are orthogonal\n");
+    printf("\nTo check if 2 tridimensional vectors are orthogonal\n");
     printf("Enter the 3 elements of vector A:\n");  
     for(i = 0; i < 3; i++) {
         printf("type %dth cordinate: ", i+1);
@@ -110,9 +110,9 @@ void escalar_product_n(void) {
     }
     printf("\n");
     if(scalar_product == 0) {
-        printf("The vectors are orthogonal.\n");
+        printf("\nThe escalar product is %d, so, the vectors are orthogonal.\n", scalar_product);
     } else {
-        printf("The vectors are not orthogonal.\n");
+        printf("\nThe escalar product is %d, so, the vectors are not orthogonal.\n", scalar_product);
     }
     printf("\n");
     free(A);
@@ -123,7 +123,7 @@ void escalar_product_n(void) {
         /* Vectorial product of n dimensional vectors */
     int i, n;
     int *A, *B, *C;
-    printf("To calculate the vectorial product between 2 n-dimensional vectors\n");
+    printf("\nTo calculate the vectorial product between 2 n-dimensional vectors\n");
     printf("Enter the dimension n of the vectors:\n");
     scanf("%d", &n);    
     A = (int*) malloc(n * sizeof(int)); 
@@ -157,7 +157,7 @@ void escalar_product_n(void) {
     void matrix_addition(void) {
          // Read the dimensions of the matrices
     int rows, cols;
-    printf("To perform the addition between 2 matrices\n");
+    printf("\nTo perform the addition of two matrices\n");
     printf("Enter number of rows and columns: \n");
     printf("rows: ");
     scanf("%d", &rows);
@@ -206,7 +206,7 @@ void escalar_product_n(void) {
         int rows, cols;
 
     // Read the dimensions of the matrices
-    printf("To perform the multiplication of a matrix by a escalar\n");
+    printf("\nTo perform the multiplication of a matrix by a escalar\n");
     printf("Enter number of rows and columns: \n");
     printf("rows: ");
     scanf("%d", &rows);
@@ -251,7 +251,7 @@ void escalar_product_n(void) {
     void matrix_rasing_to_a_power(void) {
         int rows, cols;
         // Read the dimensions of the matrices
-    printf("To perform the raising of a matrix to a power\n");
+        printf("\nTo perform the raising of a matrix to a power\n");
     printf("Enter number of rows and columns: \n");
     printf("rows: ");
     scanf("%d", &rows);
@@ -298,7 +298,7 @@ void escalar_product_n(void) {
     
     
     // Read the dimensions of the matrix A
-    printf("To perform the multiplication between 2 matrices\n");
+    printf("\nTo perform the multiplication between 2 matrices\n");
     printf("Enter number of rows and columns for matrix A: \n");
     printf("rows: ");
     scanf("%d", &rowsA);
@@ -323,7 +323,7 @@ void escalar_product_n(void) {
     scanf("%d", &rowsB);
     while (colsA != rowsB)
     {
-        printf("The number of column of first matrix (%d) must to be equal to row of second.\n", colsA);
+        printf("The number of column of first matrix (%d) must to be equal to row of second one.\n", colsA);
         printf("Enter rows and columns for matrix B again: \n");    
         printf("rows: ");       
         scanf("%d", &rowsB);
@@ -366,7 +366,7 @@ void escalar_product_n(void) {
     void transposed_matrix(void) {
         int rows, cols;
         // Read the dimensions of the matrix
-    printf("To perform the transposition of a matrix\n");
+    printf("\nTo perform the transposition of a matrix\n");
     printf("Enter number of rows and columns for the matrix: \n");
     printf("rows: ");
     scanf("%d", &rows);
@@ -454,12 +454,23 @@ int main()
             transposed_matrix();    
             break;
         default:
-            printf("unfortunately this option is not disponible, try something between 1-10.\n");
+            printf("unfortunately, this option is not disponible.\n");
             break;
         }
         if (opt!=0)
         {
-             printf("Do you want do another option? If no, type: \n0. Exit\n");
+             printf("\nIf you want do another option, type a number between 1-10:\n");
+             printf("1. Escalar product for a tridimensional vector\n");
+             printf("2. Escalar product for a n-dimensional vector\n");
+             printf("3. Subtraction between 2 vectors n-dimensional\n");
+             printf("4. Check if 2 tridimensional vectors are orthogonal\n");
+             printf("5. Vectorial product between 2 n-dimensional vectos \n");
+             printf("6. Addition between 2 matrix\n");
+             printf("7. Multiplicate a matrix times an escalar\n");
+             printf("8. Rise a matrix by a power\n");
+             printf("9. Multiplicate 2 matrix\n");
+             printf("10. Transpose a matrix\n");
+             printf("If no, type: \n0. Exit\n");
             scanf("%d", &opt);
         }
         

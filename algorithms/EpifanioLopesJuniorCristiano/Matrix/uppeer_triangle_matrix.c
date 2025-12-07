@@ -3,6 +3,7 @@
 int main() {
     int rows, cols;
     
+    printf("\nTo calculate the sum of the upper triangle elements of a square matrix\n");
     printf("Enter number of rows: ");
     scanf("%d", &rows);
     printf("Enter number of columns: ");

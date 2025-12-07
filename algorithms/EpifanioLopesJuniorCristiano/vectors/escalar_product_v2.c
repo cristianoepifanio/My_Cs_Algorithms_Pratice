@@ -5,6 +5,7 @@ int main()
 {
     /* Scala product of 2 bidimensional vectors */
     int x1, x2, y1, y2;  
+    printf("\nTo calculate the product escalar between 2 bidimensional vectors\n");
     printf("Enter coordinates of first vector (x1 y1): ");
     scanf("%d %d", &x1, &y1);
     printf("Enter coordinates of second vector (x2 y2): ");

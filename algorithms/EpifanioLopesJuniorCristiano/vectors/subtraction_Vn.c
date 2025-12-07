@@ -6,6 +6,7 @@ int main(){
     /* Subtraction of 2 n-dimensional vectors */
     int n, i;
     int *A, *B, *C; 
+    printf("\nTo calculate the subtraction between 2 n-dimensional vectors (A - B)\n");
     printf("Enter the dimension of the vectors: ");
     scanf("%d", &n);    
     A = (int*) malloc(n * sizeof(int));

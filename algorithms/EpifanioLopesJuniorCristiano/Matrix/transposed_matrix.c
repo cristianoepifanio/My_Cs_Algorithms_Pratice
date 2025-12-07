@@ -4,6 +4,7 @@ int main() {
     int rows, cols;
     
     // Read the dimensions of the matrix
+    printf("\nTo perform the transposition of a matrix\n");
     printf("Enter number of rows and columns for the matrix: \n");
     printf("rows: ");
     scanf("%d", &rows);
