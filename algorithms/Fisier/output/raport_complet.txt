@@ -1,0 +1,32 @@
+RAPORT COMPLET - TOATE ARTICOLELE ACTIVE
+
+ID: 1
+Denumire: Lapte
+Categorie: Alimente
+Pret: 7.50
+Cantitate: 40
+-----------------------------
+ID: 2
+Denumire: Paine
+Categorie: Alimente
+Pret: 3.20
+Cantitate: 60
+-----------------------------
+ID: 3
+Denumire: Ulei
+Categorie: Alimente
+Pret: 11.99
+Cantitate: 25
+-----------------------------
+ID: 4
+Denumire: Caiet
+Categorie: Papetarie
+Pret: 8.75
+Cantitate: 100
+-----------------------------
+ID: 5
+Denumire: Pix
+Categorie: Papetarie
+Pret: 2.50
+Cantitate: 150
+-----------------------------
