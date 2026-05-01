@@ -27,11 +27,12 @@ void citesteSir(char *mesaj, char *sir, int dim) {
 
 void afiseazaArticol(Articol a) {
     printf("\n-----------------------------\n");
-    printf("ID         : %d\n", a.id);
-    printf("Denumire   : %s\n", a.denumire);
-    printf("Categorie  : %s\n", a.categorie);
-    printf("Pret       : %.2f\n", a.pret);
-    printf("Cantitate  : %d\n", a.cantitate);
+     printf("\nID: %d", a.id);
+    printf("\nDenumire: %s", a.denumire);
+    printf("\nCategorie: %s", a.categorie);
+    printf("\nPret: %.2f lei", a.pret);
+    printf("\nCantitate: %d bucati", a.cantitate);
+    printf("\nValoare stoc: %.2f lei\n", a.pret * a.cantitate);
     printf("-----------------------------\n");
 }
 
@@ -97,11 +98,12 @@ void creareSiPopulareFisier() {
     }
 
     Articol articoleInitiale[] = {
-        {1, "Lapte", "Alimente", 7.50f, 40, 1},
-        {2, "Paine", "Alimente", 3.20f, 60, 1},
-        {3, "Ulei", "Alimente", 11.99f, 25, 1},
-        {4, "Caiet", "Papetarie", 8.75f, 100, 1},
-        {5, "Pix", "Papetarie", 2.50f, 150, 1}
+        {1, "Laptop Lenovo", "Electronice", 3200.00f, 10, 1},
+        {2, "Mouse Logitech", "Electronice", 120.00f, 35, 1},
+        {3, "Caiet A4", "Papetarie", 8.50f, 100, 1},
+        {4, "Pix albastru", "Papetarie", 2.50f, 200, 1},
+        {5, "Apa plata", "Alimente", 3.20f, 150, 1},
+        {6, "Cafea", "Alimente", 28.90f, 45, 1}
     };
 
     int n = sizeof(articoleInitiale) / sizeof(articoleInitiale[0]);
@@ -296,11 +298,12 @@ void raportComplet() {
 
     while (fread(&a, sizeof(Articol), 1, fbin) == 1) {
         if (a.activ == 1) {
-            fprintf(ftxt, "ID: %d\n", a.id);
+             fprintf(ftxt, "ID: %d\n", a.id);
             fprintf(ftxt, "Denumire: %s\n", a.denumire);
             fprintf(ftxt, "Categorie: %s\n", a.categorie);
-            fprintf(ftxt, "Pret: %.2f\n", a.pret);
+            fprintf(ftxt, "Pret: %.2f lei\n", a.pret);
             fprintf(ftxt, "Cantitate: %d\n", a.cantitate);
+            fprintf(ftxt, "Valoare stoc: %.2f lei\n", a.pret * a.cantitate);
             fprintf(ftxt, "-----------------------------\n");
         }
     }
@@ -350,9 +353,9 @@ void raportPartial() {
 
             fprintf(ftxt, "ID: %d\n", a.id);
             fprintf(ftxt, "Denumire: %s\n", a.denumire);
-            fprintf(ftxt, "Categorie: %s\n", a.categorie);
-            fprintf(ftxt, "Pret: %.2f\n", a.pret);
+            fprintf(ftxt, "Pret: %.2f lei\n", a.pret);
             fprintf(ftxt, "Cantitate: %d\n", a.cantitate);
+            fprintf(ftxt, "Valoare stoc: %.2f lei\n", a.pret * a.cantitate);
             fprintf(ftxt, "-----------------------------\n");
 
             gasite++;
